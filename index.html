@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaVille Fun</title>
+    <link rel="icon" type="image/x-icon" href="Images/Mediaville Logo.png">
+</head>
+<style>
+    @font-face {
+        font-family: MainFont;
+        src: url(Ubuntu-Regular.ttf);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgba(60, 3, 21, 255);
+    }
+
+    header {
+        background-color: rgba(50, 50, 50, 255);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header a {
+        font-family: MainFont;
+        border-radius: 10px 10px 0px 0px;
+        background-color: rgba(0, 0, 0, 255);
+        color: white;
+        padding: 0.5% 1%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        margin-top: 0.5%;
+        width: 25%;
+        text-align: left;
+        line-height: 2;
+        text-decoration: none;
+    }
+
+    header a:hover {
+        background-color: rgb(88, 86, 83);
+    }
+
+    header a img {
+        width: 10%;
+        vertical-align: middle;
+        border-radius: 1em;
+        margin-right: 1%;
+    }
+
+    main {
+        margin: 2%;
+    }
+
+    h1 {
+        font-family: MainFont;
+        font-size: 300%;
+        color: white;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: MainFont;
+        color: white;
+        text-align: center;
+        width: 60%;
+        margin-left: 20%;
+        font-size: 100%;
+        padding: 1%;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    section a {
+        width: 25%;
+        margin: 1%;
+        background-color: white;
+        text-align: center;
+        padding: 1%;
+        border-radius: 1em;
+        border: 10px solid rgba(60, 3, 21, 255);
+        box-shadow: 0px 0px 10px 1px #000000;
+        transition: 0.1s;
+        text-decoration: none;
+    }
+
+    section a:hover {
+        margin: 0;
+        transition: 0.1s;
+        background-color: rgb(145, 136, 136);
+    }
+
+    section a h1 {
+        color: black;
+        font-size: 150%;
+    }
+
+    section a img {
+        width: 90%;
+    }
+
+    section a p {
+        text-decoration: none;
+        color: black;
+    }
+</style>
+
+<body>
+    <header>
+        <a style="background-color: rgb(64, 62, 62);"><img src="Images/Mediaville Logo.png">
+            MediaVille Fun</a>
+        <a href="Pages/passgen.html"><img src="Images/afbeelding_2023-10-07_135546946-removebg-preview.png">Password
+            generator</a>
+        <a href="Pages/miner.html"><img src="Images/5341401.png">Raspberry miner</a>
+        <a href="Pages/pong.html"><img src="Images/147227.png"> Pong in unity</a>
+    </header>
+    <main>
+        <article>
+            <h1>Welcome to MediaVille Fun</h1>
+            <h2>Here, you will discover three easy and entertaining IT projects that you can dive into. Whether you're a
+                tech enthusiast or just looking to explore something new, these projects are sure to add some excitement
+                to your IT journey.</h2>
+        </article>
+        <section>
+            <a href="Pages/passgen.html">
+                <h1>Creating a password generator in C#</h1>
+                <img src="Images/afbeelding_2023-10-07_135546946-removebg-preview.png">
+                <p>- Basic C# knowledge required -</p>
+            </a>
+            <a href="Pages/miner.html">
+                <h1>Turning your Raspberry pi into a crypto miner</h1>
+                <img src="Images/5341401.png">
+                <p>- No knowledge required -</p>
+            </a>
+            <a href="Pages/pong.html">
+                <h1>Making pong in Unity</h1>
+                <img src="Images/147227.png">
+                <p>- Basic C# knowledge required -</p>
+                <p>- Basic unity knowledge required</p>
+            </a>
+        </section>
+    </main>
+</body>
+
+</html>
