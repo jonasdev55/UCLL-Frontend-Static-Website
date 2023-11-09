@@ -82,107 +82,63 @@ header {
     transition: 0.3s;
 }
 
+h1{
+    background-color: rgba(0, 0, 0, 0.167);
+    margin: 1%;
+    padding: 1%;
+    color: white;
+    font-weight: bold;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    border-radius: 0.5em;
+}
+
 .selected {
     color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.251);
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-}
-
-.art1 {
-    margin: 1%;
-    padding: 1%;
-    border-radius: 0.5em;
-    overflow: hidden;
-    width: 96%;
-}
-
-.art1 h1 {
-    color: white;
-    font-size: clamp(2rem, 4vw, 7rem);
-    margin-bottom: 1%;
-}
-
-.art1 div {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-.art1 div p {
-    color: white;
-    font-size: clamp(1rem, 3vw, 2rem);
-    width: 70%;
-}
-
-.art1 div img {
-    width: 10%;
-    height: 10%;
-}
-
-.art2 {
-    margin: 1%;
-    padding: 1%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-}
-
-.art2 h1 {
-    color: white;
-    font-size: clamp(2rem, 4vw, 7rem);
-    width: 80%;
-}
-
-.art2 a {
-    text-decoration: none;
-    color: white;
-    font-size: clamp(1rem, 2vw, 4rem);
-    width: 100%;
-    text-align: center;
-    background-color: var(--headerColor);
-    padding: 1%;
-    border-radius: 0.5em;
-    background: linear-gradient(to right, rgb(122, 51, 142) 0%, rgb(122, 51, 142) 50%, transparent 50%, transparent 100%);
-    background-size: 200% 100%;
-    background-position: left center;
-    transition: all 0.3s ease-out;
-}
-
-.art2 a:hover {
-    background-position: right center;
-    background-color: rgba(0, 0, 0, 0.251);
-    transition: 0.3s;
-}
-
-footer {
+section{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(23, 23, 23);
-    position: absolute;
-    bottom: 0;
+}
+
+section article{
+    margin-top: 1%;
     padding: 1%;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.543);
+    border: 2px solid var(--headerColor);
 }
 
-footer p {
-    color: white;
-    font-size: clamp(1rem, 2vw, 1.5rem);
-}
-
-.images {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    width: 10%;
-}
-
-.images img {
+section article img{
     width: 100%;
     height: 100%;
-    margin: 3%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+section article h1{
+    color: white;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    text-align: center;
+    margin-top: 1%;
+}
+
+section article a{
+    text-decoration: none;
+    color: white;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    background: linear-gradient(to left, rgb(255, 255, 255) 0%, rgb(122, 51, 142) 50%, transparent 50%, transparent 100%);
+    background-size: 200% 100%;
+    background-position: left center;
+    transition: all 0.2s ease-out;
+}
+
+section article a:hover{
+    color: var(--headerColor);
+    background-color: white;
+    background-position: right center;
+    background-color: rgba(0, 0, 0, 0.251);
+    transition: 0.2s;
 }
