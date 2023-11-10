@@ -1,0 +1,432 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../TT\ Hoves\ Pro\ Trial\ Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --headerColor: rgb(122, 51, 142);
+    --backgroundColor: rgba(0, 0, 0, 0.85)
+}
+
+body {
+    font-family: 'CustomFont', sans-serif;
+    background-color: var(--backgroundColor);
+}
+
+header {
+    background-color: var(--headerColor);
+    height: 15vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.topNav {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topNav img {
+    height: 100%;
+    margin-left: 1%;
+}
+
+.topNav ul {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+    list-style: none;
+    margin-right: 1%;
+}
+
+.bottomNav {
+    height: 50%;
+}
+
+.bottomNav ul {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    list-style: none;
+    align-items: center;
+}
+
+.bottomNav ul li {
+    height: 100%;
+    width: 100%;
+}
+
+.bottomNav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.bottomNav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.251);
+    transition: 0.3s;
+}
+
+.selected {
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.251);
+}
+
+.myProjects {
+    background-color: rgba(0, 0, 0, 0.185);
+    margin: 1%;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.myProjects h1 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    margin-bottom: 1%;
+    background-color: var(--headerColor);
+    padding: 1%;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.myProjects article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 96%;
+    margin: 1%;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.132);
+    border-radius: 0.5em;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.myProjects article h1 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    margin-bottom: 1%;
+    width: 50%;
+    background-color: transparent;
+    border: 0;
+}
+
+.myProjects article a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin: 1%;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.132);
+    border-radius: 0.5em;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    background: linear-gradient(to right, rgb(122, 51, 142) 0%, rgb(122, 51, 142) 50%, transparent 50%, transparent 100%);
+    background-size: 200% 100%;
+    background-position: right center;
+    transition: all 0.3s ease-out;
+}
+
+.myProjects article a:hover {
+    background-position: left center;
+    background-color: rgba(0, 0, 0, 0.251);
+    transition: 0.3s;
+}
+
+.externalSites {
+    background-color: rgba(0, 0, 0, 0.185);
+    margin: 1%;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.externalSites h1 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    margin-bottom: 1%;
+    background-color: var(--headerColor);
+    padding: 1%;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.externalSites article {
+    border: 2px solid white;
+    border-radius: 0.5em;
+    margin: 1%;
+}
+
+.externalSites article a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 96%;
+    margin: 1%;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.132);
+    border-radius: 0.5em;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.externalSites article:nth-child(2) a {
+    background: linear-gradient(to right, rgb(0, 119, 255) 0%, rgb(0, 162, 255) 50%, transparent 50%, transparent 100%);
+    background-size: 200% 100%;
+    background-position: right center;
+    transition: all 0.3s ease-out;
+}
+
+.externalSites article:last-child a {
+    background: linear-gradient(to right, rgb(255, 140, 0) 0%, rgb(255, 115, 0) 50%, transparent 50%, transparent 100%);
+    background-size: 200% 100%;
+    background-position: right center;
+    transition: all 0.3s ease-out;
+}
+
+.externalSites article:nth-child(2) {
+    border: 2px solid rgb(0, 140, 255);
+}
+
+.externalSites article:last-child {
+    border: 2px solid rgb(255, 140, 0);
+}
+
+.externalSites article a:hover {
+    background-position: left center;
+    background-color: rgba(0, 0, 0, 0.251);
+    transition: 0.3s;
+}
+
+.externalSites article a img {
+    width: 30%;
+    height: 10%;
+}
+
+.externalSites article a div {
+    display: flex;
+    flex-direction: column;
+}
+
+.externalSites article a div h1 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    margin-bottom: 1%;
+    background-color: transparent;
+    border: 0;
+}
+
+.externalSites article a div p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin-bottom: 1%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #171717;
+    bottom: 0;
+    padding: 1%;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+footer p {
+    color: white;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 10%;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    margin: 3%;
+}
+
+@media screen and (max-width: 768px) {
+    .myProjects {
+        background-color: rgba(0, 0, 0, 0.185);
+        margin: 0;
+        margin-top: 2%;
+        border-radius: 0;
+        overflow: hidden;
+    }
+
+    .myProjects h1 {
+        font-size: clamp(1.5rem, 2vw, 2rem);
+        margin-bottom: 1%;
+        background-color: var(--headerColor);
+        padding: 1%;
+        color: white;
+        border-bottom: 2px solid white;
+    }
+
+    .myProjects article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 98%;
+        margin: 0;
+        padding: 1%;
+        background-color: rgba(0, 0, 0, 0.132);
+        border-radius: 0;
+        text-decoration: none;
+        color: white;
+    }
+
+    .myProjects article h1 {
+        font-size: clamp(1.5rem, 2vw, 2rem);
+        margin-bottom: 1%;
+        width: 100%;
+        text-align: center;
+        background-color: transparent;
+        border: 0;
+    }
+
+    .myProjects article a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        margin: 1%;
+        padding: 1%;
+        background-color: var(--headerColor);
+        border-radius: 0;
+        text-decoration: none;
+        color: white;
+    }
+
+    .externalSites {
+        background-color: rgba(0, 0, 0, 0.185);
+        margin: 0;
+        margin-top: 2%;
+        border-radius: 0;
+        overflow: hidden;
+    }
+
+    .externalSites h1 {
+        font-size: clamp(1.5rem, 2vw, 2rem);
+        margin-bottom: 1%;
+        background-color: var(--headerColor);
+        padding: 1%;
+        color: white;
+    }
+
+    .externalSites article {
+        border-radius: 0;
+        margin: 1%;
+    }
+
+    .externalSites article a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 98%;
+        margin: 0;
+        padding: 1%;
+        background-color: rgba(0, 0, 0, 0.132);
+        border-radius: 0;
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+    }
+
+    .externalSites article:nth-child(2) a {
+        background-color: rgb(0, 179, 255);
+    }
+
+    .externalSites article:last-child a {
+        background-color: rgb(255, 140, 0);
+    }
+
+    .externalSites article:nth-child(2) {
+        border-style: none;
+    }
+
+    .externalSites article:last-child {
+        border-style: none;
+    }
+
+    .externalSites article a:hover {
+        background-position: left center;
+        background-color: rgba(0, 0, 0, 0.251);
+        transition: 0.3s;
+    }
+
+    .externalSites article a img {
+        width: 30%;
+        height: 10%;
+    }
+
+    .externalSites article a div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .externalSites article a div h1 {
+        font-size: clamp(1.5rem, 2vw, 2rem);
+        margin-bottom: 1%;
+        background-color: transparent;
+        border: 0;
+    }
+
+    .externalSites article a div p {
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        margin-bottom: 1%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #171717;
+        bottom: 0;
+        padding: 1%;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        padding: 5%;
+    }
+
+    footer p {
+        color: white;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+    }
+
+    .images {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+    }
+
+    .images img {
+        width: 100%;
+        height: 100%;
+        margin: 3%;
+    }
+}
